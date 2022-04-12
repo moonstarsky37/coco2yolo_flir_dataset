@@ -62,6 +62,11 @@ if __name__ == '__main__':
                     '%d %.6f %.6f %.6f %.6f' % res for res in converted_results
                     ))
                 file.close()
-                file_name_list.append(
-                    './data/test/'+str(image_name) + '.txt\n'
-                    )
+
+                ## for yolo cfg data
+                # file_name_list.append('./data/train/'+str(image_name) + '.txt\n')
+    # with open('./data/train.txt', 'w') as f: 
+    #     for i in file_name_list:
+    #         f.write(i)
+    # python cocojson2yolotxt.py   ./FLIR_ADAS_v2/images_thermal_val/ ./images_thermal_val_yolo_label/
+    # python cocojson2yolotxt.py   ./FLIR_ADAS_v2/images_thermal_train ./images_thermal_train_yolo_label/
